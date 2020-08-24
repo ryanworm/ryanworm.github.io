@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>WeatherPy</title>
+    <title>Latitude & Wind</title>
     <link   rel="stylesheet" 
             href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
             integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
@@ -64,45 +64,19 @@
                 </div>
             </div>
             </nav>
+
+<body>
     <div class="container">
-        <div class="row">
-            <div class="col-sm-12 col-md-8 border">
-                <h1>Summary</h1>
-                <p class=border>
-                    <img src="Web-Design-Challenge\Resources\heatmap.png" alt="Latitude v. Temperature Plot">
-                    </br>
-                    The purpose of this project was to evaluate weather patterns in relation to the equator. To accomplish this task we utilized <a href="https://openweathermap.org/api">OpenWeatherMap API</a> to assemble a data set consisting of over 500 cities.  
-                    </br>
-                    
-                    After creating this data set, we used <a href="https://matplotlib.org/">Matplotlib</a> to plot various aspects of weather vs. latitude. Factors included:
-    
-                    <!--Turn temp, clouds, wind speed and humidity into links refering to respective pages -->
-                    temperature, cloudiness,humidity and wind speed. All data included in this analysis can be found under the data section of this website. 
-                </p>
-            </div>
-            <div class="col-md-4 col-sm-12 border">
-                <h2>Visualizations</h2>
-                <div class="btn-group-vertical">
-                        <a  target="_blank" href="temp.html" 
-                            class="btn btn-info" role="button">
-                            Temperature
-                        </a>
-                        <a  target="_blank" href="clouds.html" 
-                            class="btn btn-info" role="button">
-                            Cloudiness
-                        </a>
-                        <a  target="_blank" href="humidity.html" 
-                            class="btn btn-info" role="button">
-                            Humidity
-                        </a>
-                        <a  target="_blank" href="wind.html" 
-                            class="btn btn-info" role="button">
-                            Wind Speed
-                        </a>
-                </div>
-                
-            </div>
-        </div>
+        <h1 class="plot-info">Latitude v. Wind</h1>
+        <a target="_blank" href="Web-Design-Challenge\Resources\fig4.png">
+            <img src="Web-Design-Challenge\Resources\fig4.png" alt="Latitude and Wind" Plot class="plot-img">
+        </a>
+        <p class="plot-info">
+            Wind speeds and latitude apepar to have a mild negative correlation, with higher wind speeds further from the equator.
+        <br>
+        <br>
+            It is also interesting to note that cities in the northern hemisphere have higher peak wind speeds, although a larger sample size of southern hemisphere cities should be evaluated. 
+        </p>
     </div>
 </body>
 
