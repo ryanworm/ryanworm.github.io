@@ -47,7 +47,7 @@ table{
 div.table-responsive{
     color:red;
 }
-div.table-responsive tr:hover{background-color: #caf0f8;}
+div.table-responsive tr:hover{background-color: #DEBA6F;}
 
 .plot-img {
     display: block;
