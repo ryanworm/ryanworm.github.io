@@ -1,0 +1,61 @@
+a.navbar-brand no-margins{color:red;
+}
+
+body {
+    background-color: aliceblue;
+    padding: 10px;
+    margin: 10px;
+    color: #030455;
+}
+body{
+    
+}
+.container-fluid{
+    background-color: #030455;
+}
+
+h3 {
+    color: #030455;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+p img {
+    float: left;
+    padding-bottom: 12px;
+}
+
+p {
+    margin: 20px;
+    padding: 25px;
+    background-color: #caf0f8;
+}
+
+div .btn-group-vertical {
+    margin-left: 60px;
+    }
+
+table{
+    background-color: #E5D9F2;
+    border:1px solid black;
+    color:#030455;
+    }
+
+div.table-responsive{
+    color:red;
+}
+div.table-responsive tr:hover{background-color: #DEBA6F;}
+
+.plot-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20 px;
+    width: 66%
+}
+
+

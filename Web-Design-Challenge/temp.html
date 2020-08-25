@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Latitudes & Temperature</title>
+    <link   rel="stylesheet" 
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+            integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+            crossorigin="anonymous">
+    <link   rel="stylesheet" 
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" 
+            integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+            crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" 
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous">
+    </script>
+    <link   rel="stylesheet" 
+            href="weatherpy.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" 
+                            class="navbar-toggle" 
+                            data-toggle="collapse" 
+                            data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span> 
+                    </button>
+                    <a class="navbar-brand no-margins" href="index.html">
+                        Home
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse navbar-right" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="comparisons.html">
+                        <span class="glyphicon glyphicon-th-large">
+                        </span>
+                        Plot Comparison
+                    </a></li>
+                    <li><a href="data.html">
+                        <span class="glyphicon glyphicon-option-vertical">
+                        </span>
+                        Data
+                    </a></li> 
+                    <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Plots
+                            <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="temp.html">Temperature</a></li>
+                                <li><a href="humidity.html">Humidity</a></li>
+                                <li><a href="clouds.html">Cloudiness</a></li>
+                                <li><a href="wind.html">Wind Speed</a></li>
+                            </ul>
+                            </li>
+                </ul>
+                </div>
+            </div>
+            </nav>
+
+<body>
+    <div class="container">
+        <h1 class="plot-info">Latitude v. Temperature</h1>
+        <a target="_blank" href="Web-Design-Challenge\Resources\fig1.png">
+            <img src="Web-Design-Challenge\Resources\fig1.png" alt="Latitude and Temperature Plot" class="plot-img">
+        </a>
+        <p class="plot-info">
+            From the data we can identify a strong correlation between weather and proximity to the equator. Temperatures peak around 0&deg latitude and steadily decline further from the equator.  
+        </p>
+    </div>
+</body>
+</html>

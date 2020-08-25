@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>WeatherPy</title>
+    <link   rel="stylesheet" 
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+            integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+            crossorigin="anonymous">
+    <link   rel="stylesheet" 
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" 
+            integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+            crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" 
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous">
+    </script>
+    <link   rel="stylesheet" 
+            href="weatherpy.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" 
+                            class="navbar-toggle" 
+                            data-toggle="collapse" 
+                            data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span> 
+                    </button>
+                    <a class="navbar-brand no-margins" href="index.html">
+                        Home
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse navbar-right" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="comparisons.html">
+                        <span class="glyphicon glyphicon-th-large">
+                        </span>
+                        Plot Comparison
+                    </a></li>
+                    <li><a href="data.html">
+                        <span class="glyphicon glyphicon-option-vertical">
+                        </span>
+                        Data
+                    </a></li> 
+                    <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Plots
+                            <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="temp.html">Temperature</a></li>
+                                <li><a href="humidity.html">Humidity</a></li>
+                                <li><a href="clouds.html">Cloudiness</a></li>
+                                <li><a href="wind.html">Wind Speed</a></li>
+                            </ul>
+                            </li>
+                </ul>
+                </div>
+            </div>
+            </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-8 border">
+                <h1>Summary</h1>
+                <p class=border>
+                    <img src="Web-Design-Challenge\Resources\heatmap.png" alt="Latitude v. Temperature Plot">
+                    </br>
+                    The purpose of this project was to evaluate weather patterns in relation to the equator. To accomplish this task we utilized <a href="https://openweathermap.org/api">OpenWeatherMap API</a> to assemble a data set consisting of over 500 cities.  
+                    </br>
+                    
+                    After creating this data set, we used <a href="https://matplotlib.org/">Matplotlib</a> to plot various aspects of weather vs. latitude. Factors included:
+    
+                    <!--Turn temp, clouds, wind speed and humidity into links refering to respective pages -->
+                    temperature, cloudiness, humidity and wind speed. All data included in this analysis can be found under the data section of this website. 
+                </p>
+            </div>
+            <div class="col-md-4 col-sm-12 border">
+                <h2>Visualizations</h2>
+                <div class="btn-group-vertical">
+                        <a  target="_blank" href="temp.html" 
+                            class="btn btn-info" role="button">
+                            Temperature
+                        </a>
+                        <a  target="_blank" href="clouds.html" 
+                            class="btn btn-info" role="button">
+                            Cloudiness
+                        </a>
+                        <a  target="_blank" href="humidity.html" 
+                            class="btn btn-info" role="button">
+                            Humidity
+                        </a>
+                        <a  target="_blank" href="wind.html" 
+                            class="btn btn-info" role="button">
+                            Wind Speed
+                        </a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
